@@ -8,18 +8,16 @@
                 <div class="row mb-2">
                     <div class="col-sm-6">
                         <h1 class="m-0">Добавление категории</h1>
-                    </div><!-- /.col -->
+                    </div>
                     <div class="col-sm-6">
 
-                    </div><!-- /.col -->
-                </div><!-- /.row -->
-            </div><!-- /.container-fluid -->
+                    </div>
+                </div>
+            </div>
         </div>
 
-        <!-- Main content -->
         <section class="content">
             <div class="container-fluid">
-                <!-- Small boxes (Stat box) -->
                 <div class="row">
                     <div class="col-12">
                         <form action="{{ route('admin.category.store') }}" method="POST" class="w-50">
@@ -28,7 +26,7 @@
                                 <input type="text" class="form-control" name="title" placeholder="Название категории">
                             </div>
                             @error('title')
-                                <div class="alert alert-danger">
+                                <div class="text-danger mb-3">
                                     Это поле нужно заполнить.
                                 </div>
                             @enderror
@@ -36,10 +34,7 @@
                         </form>
                     </div>
                 </div>
-                <!-- /.row -->
-
-            </div><!-- /.container-fluid -->
+            </div>
         </section>
-        <!-- /.content -->
     </div>
 @endsection
